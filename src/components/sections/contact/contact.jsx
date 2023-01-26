@@ -16,6 +16,8 @@ export default function Contact() {
           console.log(error.text);
       });
       form.current.reset();
+
+    alert('Your message has been sent successfully.');
   };
 
 

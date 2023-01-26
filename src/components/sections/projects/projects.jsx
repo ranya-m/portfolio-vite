@@ -78,7 +78,7 @@ export default function Projects(props) {
                                     <div id="info" className="absolute text-sm bottom-0 ">
                                         <div className='flex justify-between'>
                                         <h4 className='bg-mainLight dark:text-mainLight border-gray border-b dark:bg-mainDark bg-opacity-80 dark:bg-opacity-80 w-full font-semibold pl-1 text-gray'>{filterImage.title}</h4>   
-                                        <a className='bg-mainLight flex items-center px-2 h-6  font-semibold text-gray border-b  border-gray bg-opacity-80 dark:bg-mainDark dark:bg-opacity-80   hover:bg-gray hover:text-mainLight dark:hover:bg-mainLight dark:hover:text-mainDark dark:text-mainLight ' href={filterImage.link}>Visit</a>
+                                        <a target='_blank' className='bg-mainLight flex items-center px-2 h-6  font-semibold text-gray border-b  border-gray bg-opacity-80 dark:bg-mainDark dark:bg-opacity-80   hover:bg-gray hover:text-mainLight dark:hover:bg-mainLight dark:hover:text-mainDark dark:text-mainLight ' href={filterImage.link}>Visit</a>
                                         </div>
                                         <p className='bg-mainLight dark:bg-mainDark  bg-opacity-80 text-center text-gray dark:text-mainLight py-2 dark:bg-opacity-80 '>{filterImage.description}</p>
                                 </div>

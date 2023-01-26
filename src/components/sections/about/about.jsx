@@ -37,7 +37,8 @@ export default function About() {
       </div>
     </div>
 
-    
+
+    {/* LOWER SEMICIRCLE DECORATION */}
     <section className=" dark:bg-mainLight semicircle flex justify-center">
     <a href='#projects' className='z-10 mt-[5%] sm:mt-[3%] md:mt-[3%] lg:mt-[2%]'><AiOutlineDownCircle className='text-mainLight dark:text-mainDark  text-[80px] animate-bounce'/></a>
     </section>

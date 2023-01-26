@@ -219,7 +219,7 @@ export const navLinks = [
         value: "React",
         title: "Bookmarking App",
         description:"App made with React that allows the user to save and manage tabs of their favorite links",
-        link:"",
+        link:"https://ranya-m.github.io/my-bookmark/",
       },
   ];
 
