@@ -1,0 +1,318 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.dark {
+  @apply bg-mainDark text-mainLight
+}
+
+
+
+@layer base {
+  @font-face {
+    font-family:"League-Spartan", sans-serif;
+    src: url(./fonts/static/LeagueSpartan-Regular.ttf);
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  .section {
+    @apply container mx-auto py-[6rem] min-h-screen px-6
+  }
+
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #f5f3ff;
+  overflow-x: hidden;
+}
+
+
+/***********  HOVER AND ANIMATION ON CODING LANGUAGES ICONS (HOMEPAGE) ********** */
+#icon1:hover {
+  background-color: #F4470B;
+}
+#icon2:hover {
+  background-color: #254BDD;
+}
+#icon3:hover {
+  background-color: rgba(255, 255, 0, 0.829);
+}
+#icon4:hover {
+  background-color: #48CEF7;
+}
+#icon5:hover {
+  background-color: #F72C1F;
+}
+#icon6:hover {
+  background-color: #7377AD;
+}
+
+@keyframes icon6 {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color:  #7377AD;
+  }
+  100% {
+    background-color: transparent;
+
+  }
+} 
+
+#icon6 {
+  background-color: transparent;
+  animation: icon6 1.2s forwards;
+  animation-delay: 2.6s;
+}
+
+@keyframes icon5 {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #F72C1F;
+  }
+  100% {
+    background-color: transparent;
+
+  }
+} 
+
+#icon5 {
+  background-color: transparent;
+  animation: icon5 1.2s forwards;
+  animation-delay: 2.2s;
+}
+
+@keyframes icon4 {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color:  #48CEF7;
+  }
+  100% {
+    background-color: transparent;
+
+  }
+} 
+
+#icon4 {
+  background-color: transparent;
+  animation: icon4 1.2s forwards;
+  animation-delay: 1.8s;
+}
+
+@keyframes icon3 {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color:  rgba(255, 255, 0, 0.829);
+  }
+  100% {
+    background-color: transparent;
+
+  }
+} 
+
+#icon3 {
+  background-color: transparent;
+  animation: icon3 1.2s forwards;
+  animation-delay: 1.4s;
+}
+
+@keyframes icon2 {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #254BDD;
+  }
+  100% {
+    background-color: transparent;
+
+  }
+} 
+
+#icon2 {
+  background-color: transparent;
+  animation: icon2 1.2s forwards;
+  animation-delay: 1s;
+}
+
+@keyframes icon1 {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #F4470B;
+  }
+  100% {
+    background-color: transparent;
+
+  }
+} 
+
+#icon1 {
+  background-color: transparent;
+  animation: icon1 1.2s forwards;
+  animation-delay: 0.6s;
+}
+
+
+
+/* ********* ANIMATION DOT DOT DOT (CHATBOX HOMEPAGE) ********** */
+.dot-flashing {
+  position: absolute;
+  bottom: -15%;
+  left: 10%;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #7260be;
+  color: #8773de;
+  animation: dot-flashing 1s infinite linear alternate;
+  animation-delay: 0.6s;
+}
+.dot-flashing::before, .dot-flashing::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+}
+.dot-flashing::before {
+  left: -15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #6959b4;
+  color: #816cdd;
+  animation: dot-flashing 1s infinite alternate;
+  animation-delay: 0s;
+}
+.dot-flashing::after {
+  left: 15px;
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #9880ff;
+  color: #9880ff;
+  animation: dot-flashing 1s infinite alternate;
+  animation-delay: 1s;
+}
+
+@keyframes dot-flashing {
+  0% {
+    background-color: #9880ff;
+  }
+  50%, 100% {
+    background-color: #f0f0f7;
+  }
+}
+
+/* DARK MODE VERSION OF DOT DOT DOT ANIMATION CHATBOX */
+.dot-flashing-dark {
+  position: absolute;
+  bottom: -15%;
+  left: 10%;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #202020;
+  color: #292929;
+  animation: dot-flashing-dark 1s infinite linear alternate;
+  animation-delay: 0.4s;
+}
+.dot-flashing-dark::before, .dot-flashing-dark::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+}
+.dot-flashing-dark::before {
+  left: -15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #171717;
+  color: #363636;
+  animation: dot-flashing-dark 1s infinite alternate;
+  animation-delay: 0s;
+}
+.dot-flashing-dark::after {
+  left: 15px;
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #222222;
+  color: #232222;
+  animation: dot-flashing-dark 1s infinite alternate;
+  animation-delay: 0.8s;
+}
+
+@keyframes dot-flashing-dark {
+  0% {
+    background-color: #3c3c3cda;
+  }
+  50%, 100% {
+    background-color: #836e9e;
+  }
+}
+
+/* project images effects */
+#image {
+  filter:opacity(80%);
+}
+
+#image:hover {
+  filter:saturate(100%);
+}
+
+/* PROJECTS IMAGES INFOS ON HOVER */
+#info {
+  opacity:0;
+  transition: all 0.5s ease-in;
+  /* z-index: -10; */
+}
+
+#project:hover #info{
+  opacity:1;
+  /* z-index: 100; */
+}
+
+/* SEMICIRCLE SEPARATOR (ABOUT-PROJECTS) */
+
+.semicircle {
+  position: relative;
+  background: #171717;
+  height: 10vh;
+}
+
+.semicircle::before {
+  position: absolute;
+  content: '';
+  left: 50%;
+  z-index: 10;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: inherit;
+  transform: translateX(-50%) translateY(50%);
+  bottom: 0px;
+
+}
+
+
